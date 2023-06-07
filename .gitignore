@@ -11,9 +11,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-/src/assets/uploads/csv/*.csv
-/src/assets/uploads/jsonl/*.jsonl
-
 # OS
 .DS_Store
 
