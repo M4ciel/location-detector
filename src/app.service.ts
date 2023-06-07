@@ -8,7 +8,7 @@ import { readdir, unlink } from 'fs/promises';
 @Injectable()
 export class AppService extends LocationService {
   async findByJson(file: string) {
-    const locationRequest = await this.readJson(file);
+    const locationRequest = this.readJson(file);
     const filePath = await this.alocateStoreage('jsonl');
     const writer = createWriteStream(filePath);
 
